@@ -1,0 +1,120 @@
+------------------------------------------------------------
+DOMbasic. Juan José Guerra Haba - 2014 - dinertron@gmail.com
+dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me
+------------------------------------------------------------
+
+DEFINICIÓN:
+----------
+Pakete escrito en PHP para crear elementos DOM de forma dinámica.
+Sigue el paradigma POO, implementa patrones SINGLETON, métodos mágicos, 
+contiene control de errores ('EXCEPCIONES PROPIAS'), chaining en métodos,  
+memoria y recursos optimizados, ...
+
+EXPLICATIVO:
+-----------
+Más flexible y liviano que el nativo en PHP. Permite crear cualquier 
+documento de etiquetado: HTML, xHTML, XML, ... incluso cualquier otro 
+definido por el usuario (esto engloba a los que están aún por implementar) 
+que se basen en jerarquías de etiquetas, atributos y contenido; esto 
+puede lograrse símplemente modificando el archivo de constantes que 
+especifican apertura y cierre de etiquetas y un par de modificaciones más.
+
+Pueden crearse páginas webs completas que se ciñen a los estándares con 
+validación de su estructura. Una unica variable albergaría el árbol de elementos
+creados, esto incluye elementos visibles (BODY) e invisibles (HEAD), 
+estáticos (HTML) y dinámicos (SCRIPTS: por ejem. Javascript), elementos 
+de estructura y posicionamiento (xHTML) o de estilo (CSS) ...
+
+A pesar de existir otras formas de conseguir lo mismo (variables de texto, otras API, ...), 
+se ha diseñado este método por su flexibilidad y dinamismo, su potencia y su bajo consumo de recursos.
+Una vez que se entiende el mecanismo y su síntaxis, se ahorra tiempo y esfuerzo, se minimizan errores 
+y se consigue una construcción del DOM más limpia y automatizada. 
+Todos sabemos los problemas que pueden generarse al procesar una página Web 'al Vuelo' encadenando sucesivos 
+'echo, print, ...' cuidando que las cabeceras no estén enviadas con anterioridad; estos errores se 
+multiplican por mil si utilizamos Frameworks o CMS tipo (Joomla, Wordpress, Drupal, ...)
+
+CARACTERÍSTICAS:
+---------------
+ - Se han implementado funciones de utilidad que nos permiten convertir rápidamente el árbol DOM en 
+texto JSON, HTML, XML, ... y viceversa. 
+ - Mantiene un control estricto de 'Excepciones' aportando mucha información a la hora de depurar.
+ - Clases que siguen el patrón SINGLETON.
+ - Contiene métodos 'constructores' y 'destructores' que optimizan la memoria.
+ - Métodos de los llamados mágicos (getter, setter, unset, clone, toString, ...).
+ - Archivo de Configuración INI modificable para el acomodo de los parámetros básicos del DOM.
+ - Encadenamiento (chaining) de métodos [NO GETTER].
+ - Programación íntegramente según el paradigma POO.
+ - ... otras funciones de utilidad.
+
+REQUISITOS:
+ - PHP > 4
+ - Los módulos que dan soporte para lectura de archivos INI, JSON y XML, deben estar activados en PHP.
+ - Ganas de programar. (jejej)
+ 
+INSTALACION:
+ - NO NECESITA INSTALACIÓN. 
+  Emplazar el pakete en la ruta deseada donde poder llamarlo mediante las cláusulas 'include' o 'require'.
+  (evidentemente si se encuentra en formato comprimido antes DESCOMPRIMIR)
+	Se aconseja crear una carpeta (por ejemplo DOM) y situarlo dentro.
+ 
+UTILIZACIÓN:
+ - Cargar la clase principal de entrada 'DOM_element' mediante la cláusula 'include' o alguna de sus variantes: include_once, require, ...
+   Por ejemplo: ... require(realpath(dirname(__FILE__))."/DOM/DOM_element.php");
+ - Después a crear elementos DOM:
+   ... $div1=new DOM_element('div1'); ...
+ - Añadir atributos y propiedades:
+   ... $div1->setTag("div")->id="container"; ...
+ - Añadir contenido:
+   ... $div1->setText("TEXTO DENTRO DE DIV 'contenedor'")->addChild($div2); ...
+ - Imprimir:
+   ... echo $div1->toHTML(); ...
+	 
+FLUJO EN CREACIÓN DE PÁGINA WEB:
+  - El flujo normal en la construcción de una página Web sería: DOCTYPE -> HTML ( HEAD -> BODY ). Todo esto albergaría el DOCUMENTO al completo.
+	  (VER EJEMPLOS PARA UNA DEMOSTRACIÓN MÁS COMPLETA)
+	
+	- DOCUMENT:
+	  Elemento especial sin etiquetas ni atributos, es púramente la representación DOM, el árbol de elementos, el contenedor del documento al completo:
+		  ... $document=new DOM_element('document'); ...
+			... $document->setTag(''); ...
+			...   $conf=array( "TYPE"=>"2", "DESC"=>"",
+					               "OPEN_TAG_LEFT"=>"", "OPEN_TAG_RIGHT"=>"", "CLOSE_TAG_LEFT"=>"", "CLOSE_TAG_RIGHT"=>"" );
+			... $document->setConfiguration($conf);
+			
+	- DOCTYPE:
+	  Al ser este otro elemento especial (es un elemento de definición, no de estructura ni de estilo), habría que hacerlo de forma también un tanto especial 
+		utilizando etiqueta de apertura pero no de cierre y atributos sin nombre: 
+		  ... $doctype=new DOM_element("doctype"); ...
+			... $doctype->setTag("DOCTYPE"); ...
+			... $conf=array( "TYPE"=>"doctype", "DESC"=>"Tipo de Documento (DTD)",
+											 "OPEN_TAG_LEFT"=>"<!", "OPEN_TAG_RIGHT"=>">", "CLOSE_TAG_LEFT"=>"", "CLOSE_TAG_RIGHT"=>"" );
+			... $doctype->setConfiguration($conf);
+			//COMENZAR UNA CLAVE POR '_null' significa un atributo sin clave (doctype)
+			... $doctype->addAttrib("_null1", "-//W3C//DTD XHTML 1.0 Transitional//EN"); ...
+			... $doctype->_null2="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"; //atributo asignado diréctamente ...
+			NOTA: También hay que tener en cuenta que no alberga elemento alguno.
+	
+	- HTML:
+	  Elemento contenedor de HEAD y BODY. Dependiendo del tipo de documento a crear (HTML 1.0, xHTML, HTML5, ...) se le implementarán unos u otros parámetros:
+		  ... $html=new DOM_element('html'); ...
+			... $html->setTag("html"); ...
+			... $html->xmlns="http://www.w3.org/1999/xhtml"; ...
+			
+	- HEAD:
+	  Elemento invisible de la página:
+		  ... $head=new DOM_element('head'); ...
+		  ... $head->setTag("head")->addChild($title); ...
+	
+	- BODY:
+	  Elemento visual del cuerpo de la página:
+		  ... $body=new DOM_element('body'); ...
+			... $body->setTag("body")->addChild($div1); ...
+	
+	- COSIDO DE ELEMENTOS:
+	  ... $html->setChildren(array($html, $body));
+	  ... $document->setChildren(array($doctype, $html)); ...
+		
+	- IMPRESIÓN WEB:
+	  ... echo $document->toHTML(); ...
+		
+	NOTA: (VER EJEMPLOS EN LA CARPETA 'EXAMPLES' PARA UNA DEMOSTRACIÓN MÁS COMPLETA)

@@ -1,0 +1,78 @@
+[OPTIONS]
+Compiled file=help.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x40A Spanish(Traditional Sort)
+Title=DOMbasic
+
+[WINDOWS]
+main="DOMbasic","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+class_configuration.html
+class_d_o_m__attribs.html
+class_d_o_m__element.html
+interface_d_o_m___interface.html
+class_d_o_m__text_node.html
+class_d_o_m_basic_attrib_not_found_exception.html
+class_d_o_m_basic_attrib_read_only_exception.html
+class_d_o_m_basic_autoload_exception.html
+class_d_o_m_basic_element_not_found_exception.html
+class_d_o_m_basic_element_read_only_exception.html
+class_d_o_m_basic_exception.html
+class_d_o_m_basic_singleton_exception.html
+class_d_o_m_basic_value_exception.html
+class_i_n_i.html
+namespace_d_o_m_base.html
+namespace_d_o_m_basic.html
+dir_80dabeb122eccdded689c99f981bb24f.html
+dir_b850b63c5660396b604ad73d25f2be7b.html
+dir_5bd50db0cec53ef87aaa45c0260a87c6.html
+dir_f0124488be2362525b4df2685b93c743.html
+dir_6d94ce0bce29c72c23b7b49f64d560f3.html
+dir_444cf7440f6d502a5c88fca847a92561.html
+dir_e1907a670304bc66b4f1610a6344eb26.html
+index.html
+namespaces.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+functions_vars.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+DOMbasic_logo.png
+doc.png
+folderopen.png
+folderclosed.png
+arrowdown.png
+arrowright.png
+splitbar.png
+class_d_o_m__attribs.png
+class_d_o_m__element.png
+interface_d_o_m___interface.png
+class_d_o_m__text_node.png
+class_d_o_m_basic_attrib_not_found_exception.png
+class_d_o_m_basic_attrib_read_only_exception.png
+class_d_o_m_basic_autoload_exception.png
+class_d_o_m_basic_element_not_found_exception.png
+class_d_o_m_basic_element_read_only_exception.png
+class_d_o_m_basic_exception.png
+class_d_o_m_basic_singleton_exception.png
+class_d_o_m_basic_value_exception.png

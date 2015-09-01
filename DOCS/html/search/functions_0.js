@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['_5f_5fconstruct',['__construct',['../class_d_o_m__attribs.html#a3068b54c3d9bbceb8378a1530c5c025c',1,'DOM_attribs\__construct()'],['../class_d_o_m_basic_attrib_not_found_exception.html#a4717bbfc70a40a57ee741ed70766c309',1,'DOMBasicAttribNotFoundException\__construct()'],['../class_d_o_m_basic_attrib_read_only_exception.html#a15bd04f4f404cb22d1b7bb81d1f85bd1',1,'DOMBasicAttribReadOnlyException\__construct()'],['../class_d_o_m_basic_autoload_exception.html#a6295730bda886d6a5ed274b789b59a62',1,'DOMBasicAutoloadException\__construct()'],['../class_d_o_m_basic_element_not_found_exception.html#a4717bbfc70a40a57ee741ed70766c309',1,'DOMBasicElementNotFoundException\__construct()'],['../class_d_o_m_basic_element_read_only_exception.html#a461183e6de5efd5cb8c1b89cd2e9f637',1,'DOMBasicElementReadOnlyException\__construct()'],['../class_d_o_m_basic_exception.html#a7c00c6a4981f55404b49962a66b0746a',1,'DOMBasicException\__construct()'],['../class_d_o_m_basic_singleton_exception.html#a095c5d389db211932136b53f25f39685',1,'DOMBasicSingletonException\__construct()'],['../class_d_o_m_basic_value_exception.html#ae15f43081c11a636e6a488fdc09b2811',1,'DOMBasicValueException\__construct()']]],
+  ['_5f_5fget',['__get',['../class_d_o_m__attribs.html#ac737d6e1b57b00524c41abca99e26012',1,'DOM_attribs']]],
+  ['_5f_5fisset',['__isset',['../class_d_o_m__attribs.html#ad261afb7eae92f2306b47cd8e0304112',1,'DOM_attribs']]],
+  ['_5f_5fset',['__set',['../class_d_o_m__attribs.html#adc189df9285f4b190fcd3b92c0b0b46f',1,'DOM_attribs']]],
+  ['_5f_5funset',['__unset',['../class_d_o_m__attribs.html#af1d0247099738de37abad0d556c11b8e',1,'DOM_attribs\__unset()'],['../class_d_o_m__element.html#ad94d5fedc2a03dc826a5256bf93be076',1,'DOM_element\__unset()']]]
+];
