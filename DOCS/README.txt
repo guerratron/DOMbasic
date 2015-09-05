@@ -5,8 +5,8 @@ dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me
 
 DEFINITION:
 ----------
-PHP pakage to create dynamic DOM elements.
-Follow the OOP paradigm, implemented SINGLETON patterns, magical methods,
+PHP package to create dynamic DOM elements.
+It follow the OOP paradigm, implemented SINGLETON patterns, magical methods,
 contains error control ('own exceptions'), chaining methods,
 optimized memory and resources, ...
 
