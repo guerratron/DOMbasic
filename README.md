@@ -3,9 +3,8 @@ _DOMbasic. Juan José Guerra Haba - 2014 - dinertron@gmail.com
 dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me_
 
 ## DEFINITION: ##
-PHP pakage to create dynamic __DOM__ elements.  
-Follow the __OOP__ paradigm, implemented __SINGLETON__ patterns, _magical_ methods, contains error control ('own exceptions'), 
-_chaining_ methods, optimized memory and resources, ...  
+PHP package to create dynamic __DOM__ elements.  
+It follow the __OOP__ paradigm, implemented __SINGLETON__ patterns, _magical_ methods, contains error control ('own exceptions'), _chaining_ methods, optimized memory and resources, ...  
 
 ## EXPLANATORY: ##
 More flexible and lighter than the native __PHP__. It allows you to create any document labeling: _HTML, XHTML, XML, ..._ 
