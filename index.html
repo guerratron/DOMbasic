@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dombasic by guerratron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Dombasic</h1>
+      <h2 class="project-tagline">PHP pakage to create dynamic DOM elements. Follow the OOP paradigm, implemented SINGLETON patterns, magical methods, contains error control (&#39;own exceptions&#39;), chaining methods, optimized memory and resources, ...</h2>
+      <a href="https://github.com/guerratron/DOMbasic" class="btn">View on GitHub</a>
+      <a href="https://github.com/guerratron/DOMbasic/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/guerratron/DOMbasic/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="dombasic" class="anchor" href="#dombasic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOMbasic</h1>
+
+<p><em>DOMbasic. Juan José Guerra Haba - 2014 - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a><br>
+<a href="mailto:dombasic-full@lists.osdn.me">dombasic-full@lists.osdn.me</a> - <a href="mailto:dombasic-private@lists.osdn.me">dombasic-private@lists.osdn.me</a></em></p>
+
+<h2>
+<a id="definition" class="anchor" href="#definition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DEFINITION:</h2>
+
+<p>PHP package to create dynamic <strong>DOM</strong> elements.<br>
+It follow the <strong>OOP</strong> paradigm, implemented <strong>SINGLETON</strong> patterns, <em>magical</em> methods, contains error control ('own exceptions'), <em>chaining</em> methods, optimized memory and resources, ...  </p>
+
+<h2>
+<a id="explanatory" class="anchor" href="#explanatory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EXPLANATORY:</h2>
+
+<p>More flexible and lighter than the native <strong>PHP</strong>. It allows you to create any document labeling: <em>HTML, XHTML, XML, ...</em> 
+including any user-defined (this includes those who are yet to be implemented) that are based on hierarchies of tags, 
+attributes and content; this You can be achieved simply by modifying the constants file specify, opening and closing 
+tags and a couple of other modifications.  </p>
+
+<p>You can create complete websites that adhere to the standards validation of its structure. A tree harbor the only 
+variable element created, this includes visible elements (<strong>BODY</strong>) and invisible (<strong>HEAD</strong>), static (<em>HTML</em>) and 
+dynamic (<strong>SCRIPTS</strong>:. EG <em>Javascript</em>), elements and positioning structure (<em>xHTML</em>) or style (<em>CSS</em>) ...  </p>
+
+<p>Although there are other ways to achieve the same (text variables, other <em>APIs</em>, ...) This method is designed for 
+flexibility and dynamism, performance and low resource consumption.<br>
+Once you understand the mechanism and its syntax, saving time and effort, errors are minimized and <strong>DOM</strong> construction 
+and automated cleaner is achieved.<br>
+We all know the problems that can be generated when processing a Web page on the fly successive chaining
+<em>'Echo, print, ... "</em> making sure that the headers are not sent in advance; these errors multiplied by a thousand if 
+we use Frameworks or type <em>CMS</em> (<em>Joomla, Wordpress, Drupal, ...</em>)  </p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FEATURES:</h2>
+
+<ul>
+<li>They have been implemented utility functions that allow us to quickly convert the <strong>DOM</strong> tree
+<em>JSON</em> text, <em>HTML</em>, <em>XML</em>, ... and vice versa.</li>
+<li>Maintain tight control 'Exceptions' providing much information when debugging.</li>
+<li>Classes that follow the <strong>SINGLETON</strong> pattern.</li>
+<li>Contains methods 'builders' and 'destructive' to optimize memory.</li>
+<li>Methods called magical (<em>getter, setter, unset, clone, toString, ...</em>).</li>
+<li>Configuration file writable for the accommodation of the basic parameters of <em>INI DOM</em>.</li>
+<li>Chaining methods [<em>NO GETTER</em>].</li>
+<li>Programming entirely within the paradigm <strong>OOP</strong>.</li>
+<li>... Other utility functions.</li>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>REQUIREMENTS:</h2>
+
+<ul>
+<li>
+<em>PHP</em> &gt; 4</li>
+<li>The modules that support for reading <em>INI</em>, <em>JSON</em> and <em>XML</em> files, must be enabled in <strong>PHP</strong>.</li>
+<li>Having wanted to write code. jejejejj</li>
+</ul>
+
+<h2>
+<a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INSTALATION:</h2>
+
+<ol>
+<li>
+<p>You do not require installation.  </p>
+
+<p>Place the pakage in the desired route by which to call to instructions <em>'include'</em> or <em>'require'</em>.<br>
+<em>(obviously if it's in a compressed format before DECOMPRESS)</em><br>
+We suggest creating a folder (for example <em>DOM</em>) and place it inside. </p>
+</li>
+</ol>
+
+<h2>
+<a id="use" class="anchor" href="#use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USE:</h2>
+
+<ul>
+<li>Load the main input class '<em>DOM_element</em>' by 'include' or some variant clause: <em>include_once, require ...</em> by example:<br>
+<code>... require(realpath(dirname(__FILE__))."/DOM/DOM_element.php"); ...</code><br>
+</li>
+<li>After this, to creating <strong>DOM</strong> elements:<br>
+<code>... $div1=new DOM_element('div1'); ...</code><br>
+</li>
+<li>Add attributes and properties:<br>
+<code>... $div1-&gt;setTag("div")-&gt;id="container"; ...</code><br>
+</li>
+<li>Add content:<br>
+<code>... $div1-&gt;setText("TEXT INTO 'container' DIV")-&gt;addChild($div2); ...</code><br>
+</li>
+<li>Print:<br>
+<code>... echo $div1-&gt;toHTML(); ...</code><br>
+</li>
+</ul>
+
+<h2>
+<a id="web-flow-creation" class="anchor" href="#web-flow-creation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WEB FLOW CREATION:</h2>
+
+<ul>
+<li><p>The normal flow for building a Web page would be: DOCTYPE -&gt; HTML (HEAD -&gt; BODY).<br>
+All this would contain the entire document. (SEE EXAMPLES FOR MORE FULL SHOW)  </p></li>
+<li><p>DOCUMENT:<br>
+  No special labels or attributes element is purely the DOM representation, the element tree, the container document in full:
+      <code>... $document=new DOM_element('document'); ...</code><br>
+        <code>... $document-&gt;setTag(''); ...</code><br>
+        <code>...   $conf=array( "TYPE"=&gt;"2", "DESC"=&gt;"",
+                               "OPEN_TAG_LEFT"=&gt;"", "OPEN_TAG_RIGHT"=&gt;"", 
+                               "CLOSE_TAG_LEFT"=&gt;"", "CLOSE_TAG_RIGHT"=&gt;"" ); ...</code><br>
+        <code>... $document-&gt;setConfiguration($conf); ...</code>  </p></li>
+<li><p>DOCTYPE:<br>
+  This being another special element (it is an element of definition, structure and style), we should also do it using both special 
+    opening tag but no closing and unnamed attributes:<br>
+      <code>... $doctype=new DOM_element("doctype"); ...</code><br>
+        <code>... $doctype-&gt;setTag("DOCTYPE"); ...</code><br>
+        <code>... $conf=array( "TYPE"=&gt;"doctype", "DESC"=&gt;"Tipo de Documento (DTD)",
+                                         "OPEN_TAG_LEFT"=&gt;"&lt;!", "OPEN_TAG_RIGHT"=&gt;"&gt;", 
+                                         "CLOSE_TAG_LEFT"=&gt;"", "CLOSE_TAG_RIGHT"=&gt;"" ); ...</code><br>
+        <code>... $doctype-&gt;setConfiguration($conf); ...</code><br>
+        //STARTING A KEY FOR '<em>null' means an attribute without key (doctype)<br>
+        <code>... $doctype-&gt;addAttrib("_null1", "-//W3C//DTD XHTML 1.0 Transitional//EN"); ...</code><br>
+        <code>... $doctype-&gt;_null2="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"; //atributo asignado diréctamente ...</code><br>
+        _NOTE: Also keep in mind that not harbor any element.</em>  </p></li>
+<li><p>HTML:<br>
+  Container of elements <em>HEAD</em> and <em>BODY</em>. Depending on the type of document to create <em>(HTML 1.0, xHTML, HTML5, ...)</em> 
+  will implement those or other parameters:<br>
+      <code>... $html=new DOM_element('html'); ...</code><br>
+        <code>... $html-&gt;setTag("html"); ...</code><br>
+        <code>... $html-&gt;xmlns="http://www.w3.org/1999/xhtml"; ...</code>  </p></li>
+<li><p>HEAD:<br>
+  Invisible element of page:<br>
+      <code>... $head=new DOM_element('head'); ...</code><br>
+      <code>... $head-&gt;setTag("head")-&gt;addChild($title); ...</code>  </p></li>
+<li><p>BODY:<br>
+    Visual element of page:<br>
+      <code>... $body=new DOM_element('body'); ...</code><br>
+        <code>... $body-&gt;setTag("body")-&gt;addChild($div1); ...</code>  </p></li>
+<li><p>SEWING OF ELEMENTS:<br>
+  <code>... $html-&gt;setChildren(array($html, $body)); ...</code><br>
+  <code>... $document-&gt;setChildren(array($doctype, $html)); ...</code>  </p></li>
+<li>
+<p>WEB PRINTING:<br>
+  <code>... echo $document-&gt;toHTML(); ...</code>  </p>
+
+<p><em>NOTE: (SEE EXAMPLES IN THE 'EXAMPLES' FOLDER FOR A MORE FULL SHOW)</em>  </p>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/guerratron/DOMbasic">Dombasic</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
