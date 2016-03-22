@@ -29,7 +29,7 @@ we use Frameworks or type _CMS_ (_Joomla, Wordpress, Drupal, ..._)
 _JSON_ text, _HTML_, _XML_, ... and vice versa.
   * Maintain tight control 'Exceptions' providing much information when debugging.
   * Classes that follow the __SINGLETON__ pattern.
-  * Contains methods 'builders' and 'destructive' to optimize memory.
+  * Contains methods 'constructor' and 'destructor' to optimize memory.
   * Methods called magical (_getter, setter, unset, clone, toString, ..._).
   * Configuration file writable for the accommodation of the basic parameters of _INI DOM_.
   * Chaining methods [_NO GETTER_].
