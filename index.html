@@ -8,6 +8,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/template.css" media="screen">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="javascript/main.js"></script> -->
+		<!-- SLICK SLIDE
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="javascripts/slick/slick-min.css"/> -->
   </head>
   <body>
     <section class="page-header">
@@ -20,20 +26,64 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="dombasic" class="anchor" href="#dombasic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOMbasic</h1>
+		
+      <blockquote>
+<hr />
 
-<p><em>DOMbasic. Juan José Guerra Haba - 2014 - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a><br>
-<a href="mailto:dombasic-full@lists.osdn.me">dombasic-full@lists.osdn.me</a> - <a href="mailto:dombasic-private@lists.osdn.me">dombasic-private@lists.osdn.me</a></em></p>
+        <nav>
+					<span class="caption">INDEX:</span>
+					<ul id="TOC">
+						<li><a href="#dombasic" title="introduction">Introduction</a></li>
+						<li><a href="#features" title="script features">Features</a></li>
+						<li><a href="#requirements" title="script requirements">Requirements</a></li>
+						<li><a href="#instalation" title="script install">Instalation</a></li>
+						<li><a href="#usage" title="the script usage">Usage</a></li>
+						<li><a href="#web-flow-creation" title="the script web-flow-creation">Web flow creation</a></li>
+						<!-- <li><a href="#developing" title="develop by">Developing</a></li>
+						<li><a href="#tools" title="tools for write code">Tools</a></li>
+						<li><a href="#author" title="script author">Author</a></li> -->
+					</ul>
+					<br class="clearfix" />
+				</nav>
+		<!-- SLICK SLIDE
+		<section class="carousel" style="text-align: center;">
+			
+				<div class="slick-slide-target1">
+					<div>
+						<a href="img/zonesGUI.png"> <img src="img/zonesGUI.png" alt="GUI areas" title="GUI areas" /> </a>
+						<span style="font-size:smaller;">buttons, canvas, options, footer, ...</span>
+					</div>
+					<div>	<a href="img/zoneOptions2.png"> <img src="img/zoneOptions2.png" alt="GUI options area" title="options area" /> </a> </div>
+					<div>
+						<a href="img/zoneCoordinates.png"> <img src="img/zoneCoordinates.png" alt="GUI coordinates area" title="coordinates area" /> </a>
+						<span style="font-size:smaller;">Coordinates area</span>
+					</div>
+					<div>	<a href="img/ex1.jpg"> <img src="img/ex1.jpg" alt="example-1" title="bexample 1" /> </a> </div>
+					<div>	<a href="img/ex2.png"> <img src="img/ex2.png" alt="example-2" title="example 2" /> </a> </div>
+					<div>	<a href="img/ex3.png"> <img src="img/ex3.png" alt="example-3" title="example 3" /> </a> </div>
+					<div>	<a href="img/ex4.png"> <img src="img/ex4.png" alt="example-4" title="example 4" /> </a> </div>
+					<div>	<a href="img/ex5.png"> <img src="img/ex5.png" alt="example-5" title="example 5" /> </a> </div>
+					<div>	<a href="img/canvasShapesButtons.png"> <img src="img/canvasShapesButtons.png" alt="GUI buttons area" title="buttons area" /> </a> </div>
+				</div>
+		</section> -->
 
-<h2>
-<a id="definition" class="anchor" href="#definition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DEFINITION:</h2>
+<header>'DOMBasic' (PHP) - Library to create dynamic <strong>DOM</strong> elements.<br />
+  Library: 'DOMBasic'.<br>
+  Author: Juan José Guerra Haba - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a> - 2014 January<br>
+  License: Free BSD. &amp; Open GPL v.3. Keep credit, please.<br>
+  Versión: 1.0.0<br />
+  File: DOM_element.php               Main Class: DOM_element.php
+</header>
+<p><em><a href="mailto:dombasic-full@lists.osdn.me">dombasic-full@lists.osdn.me</a> - <a href="mailto:dombasic-private@lists.osdn.me">dombasic-private@lists.osdn.me</a></em></p>
+
+<hr />
+
+<h1>
+<a id="dombasic" name="intro" class="anchor" href="#dombasic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOMBasic</h1>
 
 <p>PHP package to create dynamic <strong>DOM</strong> elements.<br>
 It follow the <strong>OOP</strong> paradigm, implemented <strong>SINGLETON</strong> patterns, <em>magical</em> methods, contains error control ('own exceptions'), <em>chaining</em> methods, optimized memory and resources, ...  </p>
-
-<h2>
-<a id="explanatory" class="anchor" href="#explanatory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EXPLANATORY:</h2>
+</blockquote>
 
 <p>More flexible and lighter than the native <strong>PHP</strong>. It allows you to create any document labeling: <em>HTML, XHTML, XML, ...</em> 
 including any user-defined (this includes those who are yet to be implemented) that are based on hierarchies of tags, 
@@ -92,7 +142,7 @@ We suggest creating a folder (for example <em>DOM</em>) and place it inside. </p
 </ol>
 
 <h2>
-<a id="use" class="anchor" href="#use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USE:</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USAGE:</h2>
 
 <ul>
 <li>Load the main input class '<em>DOM_element</em>' by 'include' or some variant clause: <em>include_once, require ...</em> by example:<br>
@@ -164,14 +214,42 @@ All this would contain the entire document. (SEE EXAMPLES FOR MORE FULL SHOW)  <
 </li>
 </ul>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/guerratron/DOMbasic">Dombasic</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
     </section>
 
+		  <footer class="site-footer">
+        <span class="site-footer-owner"><img src="img/DOMBasic-logo-mini.png" alt="dombasic_logo" title="DOMBasic logo" /> <a href="https://github.com/guerratron/DOMbasic">Dombasic</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="author" /></span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> modified by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="guerratron logo" />.</span>
+      </footer>
+			
+			<!-- SLICK SLIDE
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+			<script type="text/javascript" src="javascripts/slick/slick.min.js"></script> -->
+			
+			<script>
+				//SLICK SLIDE from: http://kenwheeler.github.io/slick/
+				// Can also be used with $(window).load(function() {
+				/*$(document).ready(function() {
+					$('.slick-slide-target1').slick({
+						dots: true,
+						infinite: true,
+						speed: 600,
+						slidesToShow: 2,
+						centerMode: true,
+						variableWidth: false,
+						useCSS: true,
+						swipeToSlide: false,
+						respondTo: "min",
+						pauseOnDotsHover: true,
+						autoplay: true,
+						mobileFirst: true,
+						infinite: false,
+						focusOnSelect: true,
+						centerMode: true,
+						adaptiveHeight: false,
+					});
+				});*/
+		</script>
   
   </body>
 </html>
