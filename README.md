@@ -1,7 +1,7 @@
 # DOMbasic #
 [![dombasic logo](assets/DOMbasic_logo.png "DOMbasic GitHub page")](http://guerratron.github.io/DOMbasic "DOMbasic page")  
-_DOMbasic. Juan José Guerra Haba - 2014 - dinertron@gmail.com  
-dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me_
+*DOMbasic. Juan José Guerra Haba - 2014 - dinertron@gmail.com  
+dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me*
 
 ## DEFINITION: ##
 PHP package to create dynamic __DOM__ elements.  
