@@ -1,8 +1,8 @@
 # DOMbasic #
 <a href="http://guerratron.github.io/DOMbasic"><img src="http://guerratron.github.io/DOMbasic/assets/DOMbasic_logo.png" title="DOMbasic GitHub page" alt="dombasic logo" /></a>  
-<!--
+<!---
 %% [![dombasic logo](/assets/DOMbasic_logo.png "DOMbasic GitHub page")](http://guerratron.github.io/DOMbasic)
--->
+--->
 *DOMbasic. Juan José Guerra Haba - 2014 - dinertron@gmail.com  
 dombasic-full@lists.osdn.me - dombasic-private@lists.osdn.me*
 
